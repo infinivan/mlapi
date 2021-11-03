@@ -1,0 +1,18 @@
+# exclude everything
+node_modules
+mongo/*
+postgres/*
+rtw_app/images/*
+
+# .env
+log.txt
+.devcontainer
+.vscode
+.mypy_cache
+cookiecutter-config-file.yml
+node_modules
+*.swp
+*.swo
+*.pyc
+*.tar.gz
+.DS_Store
