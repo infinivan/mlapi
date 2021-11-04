@@ -1,0 +1,29 @@
+services:
+  mlapi:
+    #stdin_open: true
+    build:
+      dockerfile: Dockerfile
+      context: ./app
+    volumes:
+      #- /usr/local/lib
+      - ./app:/app
+    ports:
+      - 5002:80
+
+    # env_file:
+    #   - .env
+    # environment:
+    #   #= sets the variable at run time (when container is started up)
+    #   #just the variable name, value is taken from computer
+    #   #- POSTGRES_PASSWORD
+    #   - REDIS_HOST=${REDIS_HOST}
+    #   - REDIS_PORT=${REDIS_PORT}
+    #   - PGUSER=${PGUSER}
+    #   - PGHOST=${PGHOST}
+    #   - PGDATABASE=${PGDATABASE}
+    #   - PGPASSWORD=${PGPASSWORD}
+    #   - PGPORT=${PGPORT}
+    #   - MONGO_HOST=${MONGO_HOST}
+    #   - MONGO_USER=${MONGO_USER}
+    #   - MONGO_PASSWORD=${MONGO_PASSWORD}
+    #   - MONGO_PORT=${MONGO_PORT}
