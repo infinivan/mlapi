@@ -1,2 +1,2 @@
 new branch file
-from master branch
+from new branch
