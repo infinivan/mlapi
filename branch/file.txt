@@ -1,2 +1,3 @@
 new branch file
 from new branch
+this line will be stashed
